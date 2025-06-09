@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #c1d3ff, #ffd6c1);
+  overflow: hidden;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+  opacity: 0.6;
+}
+
+body::before {
+  width: 400px;
+  height: 400px;
+  background: #e0c1ff;
+  top: -80px;
+  left: -100px;
+}
+
+body::after {
+  width: 300px;
+  height: 300px;
+  background: #c1fff2;
+  bottom: -60px;
+  right: -80px;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #444;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #0077ff;
+}
+
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 25px;
+  background: #0077ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

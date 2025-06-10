@@ -133,21 +133,45 @@ p {
 }
 .btn {
   display: inline-block;
-  padding: 12px 24px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
-  color: white;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
   font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+  color: #fff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Красно-оранжевый градиент */
   border: none;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(255, 65, 108, 0.4);
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(255, 65, 108, 0.5);
+  box-shadow: 0 8px 24px rgba(255, 75, 43, 0.5);
+}
+.btn1 {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Красно-оранжевый градиент */
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(255, 65, 108, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255, 75, 43, 0.5);
 }

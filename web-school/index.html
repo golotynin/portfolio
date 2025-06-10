@@ -1,1 +1,107 @@
-12
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartKids — подготовка к школе</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">🧩 SmartKids</div>
+    <nav>
+      <a href="#about">О школе</a>
+      <a href="#programs">Программы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#form">Записаться</a>
+    </nav>
+  </header>
+
+  <!-- Hero баннер -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Добро пожаловать в <span>SmartKids</span></h1>
+      <p>Помогаем детям уверенно шагнуть в мир знаний.<br> Подготовка к школе — легко и с удовольствием!</p>
+      <a href="#form" class="btn-main">Записаться на бесплатное занятие</a>
+    </div>
+    <div class="hero-art"></div>
+  </section>
+
+  <!-- О школе -->
+  <section class="about" id="about">
+    <h2>Почему нас выбирают?</h2>
+    <div class="about-list">
+      <div class="about-card" style="--color:#f9ca24">
+        <div class="about-icon">👩‍🏫</div>
+        Педагоги с большим опытом
+      </div>
+      <div class="about-card" style="--color:#7ed6df">
+        <div class="about-icon">🎨</div>
+        Современные методики и творчество
+      </div>
+      <div class="about-card" style="--color:#ff7979">
+        <div class="about-icon">💬</div>
+        Маленькие группы, каждому внимание
+      </div>
+      <div class="about-card" style="--color:#6ab04c">
+        <div class="about-icon">🏆</div>
+        Дружелюбная атмосфера и успех
+      </div>
+    </div>
+  </section>
+
+  <!-- Программы -->
+  <section class="programs" id="programs">
+    <h2>Программы подготовки</h2>
+    <div class="program-list">
+      <div class="program-card">
+        <div class="program-icon">✍️</div>
+        <h3>Развитие письма</h3>
+        <p>Каллиграфия, буквы, цифры, подготовка к русскому языку</p>
+      </div>
+      <div class="program-card">
+        <div class="program-icon">🔢</div>
+        <h3>Математика</h3>
+        <p>Цифры, логика, решения задач, играем в математику с радостью!</p>
+      </div>
+      <div class="program-card">
+        <div class="program-icon">🤝</div>
+        <h3>Общение</h3>
+        <p>Речь, развитие словарного запаса, уверенность в общении.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-icon">🎭</div>
+        <h3>Творчество</h3>
+        <p>Аппликация, лепка, рисование, развитие воображения.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="reviews" id="reviews">
+    <h2>Отзывы родителей</h2>
+    <div class="reviews-list" id="reviewsList">
+      <!-- Отзывы будут вставляться JS -->
+    </div>
+  </section>
+
+  <!-- Форма заявки -->
+  <section class="form-section" id="form">
+    <h2>Записаться на бесплатное занятие</h2>
+    <form id="contactForm" autocomplete="off">
+      <input type="text" placeholder="Имя ребенка" required>
+      <input type="text" placeholder="Имя родителя" required>
+      <input type="tel" placeholder="Телефон" required>
+      <button type="submit" class="btn-main">Записаться</button>
+      <div class="form-success" id="formSuccess"></div>
+    </form>
+  </section>
+
+  <footer>
+    <div>© 2025 SmartKids — подготовка к школе</div>
+    <div style="font-size:.95em;margin-top:7px;color:#bbb;">Сделано с любовью ❤️ для будущих гениев</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

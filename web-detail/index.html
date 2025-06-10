@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>True Detail — Детейлинг премиум-класса</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header class="hero" data-aos="fade-up">
+    <h1>True Detail</h1>
+    <p>Премиальный детейлинг, который подчёркивает ваш стиль</p>
+    <a href="#contact" class="btn">Записаться</a>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>Почему выбирают нас</h2>
+    <ul class="features">
+      <li>Только профессиональные материалы</li>
+      <li>Опыт более 7 лет</li>
+      <li>Индивидуальный подход</li>
+      <li>Гарантия результата</li>
+    </ul>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Наши услуги</h2>
+    <div class="services-grid">
+      <div class="service">
+        <h3>Полировка кузова</h3>
+        <p>Удаление царапин и восстановление блеска лака.</p>
+      </div>
+      <div class="service">
+        <h3>Химчистка салона</h3>
+        <p>Глубокая очистка обивки, пластика и кожи.</p>
+      </div>
+      <div class="service">
+        <h3>Защитные покрытия</h3>
+        <p>Нанокерамика, воск, антидождь и защита плёнкой.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" data-aos="fade-up">
+    <h2>Отзывы клиентов</h2>
+    <blockquote>"Машина выглядит лучше, чем из салона! Огромное спасибо команде True Detail."
+      <cite>— Алексей, BMW 5 серии</cite>
+    </blockquote>
+    <blockquote>"Очень бережное отношение к авто, сервис на высшем уровне!"
+      <cite>— Ирина, Audi Q5</cite>
+    </blockquote>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Записаться на детейлинг</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="tel" placeholder="Телефон" required />
+      <select required>
+        <option disabled selected>Выберите услугу</option>
+        <option>Полировка кузова</option>
+        <option>Химчистка салона</option>
+        <option>Нанесение керамики</option>
+      </select>
+      <textarea placeholder="Комментарий (необязательно)" rows="4"></textarea>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 True Detail. Все права защищены.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>

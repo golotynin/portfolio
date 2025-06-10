@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(135deg, #0c0c0c, #1a1a1a);
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: rgba(255, 0, 64, 0.15);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 120px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  color: #ff0033;
+  animation: glow 2s ease-in-out infinite alternate;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3em;
+  color: #ddd;
+}
+
+.btn {
+  background: #ff0033;
+  color: #fff;
+  padding: 14px 32px;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 30px;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #e6002c;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #ff0033;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.features li {
+  background: rgba(255,255,255,0.03);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 0, 51, 0.2);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255, 0, 64, 0.2);
+  border-radius: 18px;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service h3 {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.service p {
+  color: #bbb;
+}
+
+.reviews blockquote {
+  background: rgba(255,255,255,0.02);
+  border-left: 4px solid #ff0033;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #ddd;
+  border-radius: 12px;
+}
+
+.reviews cite {
+  display: block;
+  margin-top: 10px;
+  color: #aaa;
+  font-style: normal;
+  font-size: 0.9em;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255, 0, 64, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+}
+
+input, select, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  background: #1f1f1f;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #ff0033;
+  box-shadow: 0 0 5px rgba(255, 0, 51, 0.5);
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  background: #0b0b0b;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff0033, 0 0 20px #ff0033;
+  }
+  to {
+    text-shadow: 0 0 20px #ff3366, 0 0 40px #ff3366;
+  }
+}
+
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}

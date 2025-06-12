@@ -1,1 +1,141 @@
-df
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PC-Game — Компьютерный клуб</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="bg-deco"></div>
+
+  <!-- HEADER -->
+  <header class="glass header-main">
+    <div class="logo neon">🎮 PC-Game</div>
+    <nav>
+      <a href="#prices">Тарифы</a>
+      <a href="#booking">Бронирование</a>
+      <a href="#shop">Товары</a>
+      <a href="#team">Команда</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero glass">
+      <div class="hero-anim-bg">
+        <canvas id="heroWave"></canvas>
+        <div class="glow-cyber"></div>
+        <div class="starfield"></div>
+      </div>
+      <div class="hero-content">
+        <h2 class="neon-text">PC-Game <span>Cyber Club</span></h2>
+        <p class="hero-desc">Геймерская атмосфера, мощные ПК, стиль будущего.<br>Твой комфорт — наш приоритет!</p>
+        <button class="hero-btn big-neon jelly" id="toBooking">Быстрое бронирование</button>
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section class="prices glass center-block" id="prices">
+      <h2>Тарифы</h2>
+      <div class="price-list">
+        <div class="price-card anim-card">
+          <div class="price-icon">🖥️</div>
+          <h3>Обычный ПК</h3>
+          <div class="price neon-text">200₽/час</div>
+          <p>144 Гц, RTX 3060, 16 ГБ</p>
+        </div>
+        <div class="price-card anim-card">
+          <div class="price-icon">⚡️</div>
+          <h3>Турбо-пакет</h3>
+          <div class="price neon-text">300₽/час</div>
+          <p>240 Гц, RTX 4060Ti, 32 ГБ</p>
+        </div>
+        <div class="price-card anim-card">
+          <div class="price-icon">👑</div>
+          <h3>VIP-капсула</h3>
+          <div class="price neon-text">450₽/час</div>
+          <p>280 Гц, RTX 4090, 64 ГБ</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking glass center-block" id="booking">
+      <h2>Бронирование</h2>
+      <form id="bookingForm" autocomplete="off">
+        <div class="booking-tariffs">
+          <div class="tariff-cell" data-price="200" data-name="Обычный ПК">Обычный ПК<br><b>200 ₽/ч</b></div>
+          <div class="tariff-cell" data-price="300" data-name="Турбо-пакет">Турбо-пакет<br><b>300 ₽/ч</b></div>
+          <div class="tariff-cell" data-price="450" data-name="VIP-капсула">VIP-капсула<br><b>450 ₽/ч</b></div>
+        </div>
+        <div class="date-wrap">
+          <input type="date" id="date" class="custom-date" required>
+          <span class="calendar-ico">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+              <rect x="2.5" y="5" width="19" height="15.2" rx="4.2" fill="#68b3ff" opacity="0.19"/>
+              <rect x="7" y="9" width="10" height="2" rx="1" fill="#ffe298"/>
+              <rect x="7" y="13" width="5" height="2" rx="1" fill="#ffe298"/>
+              <rect x="14" y="13" width="3" height="2" rx="1" fill="#ffe298"/>
+            </svg>
+          </span>
+        </div>
+        <div class="booking-times" id="times-list"></div>
+        <div class="booking-row booking-promo-row">
+          <button type="button" id="showPromoBtn" class="btn-promo jelly">💡 У меня есть промокод</button>
+          <div class="booking-promo" id="promoArea">
+            <input type="text" id="promoInput" placeholder="Введите промокод">
+            <button type="button" id="promoBtn" class="jelly">OK</button>
+          </div>
+        </div>
+        <div class="booking-total">
+          <span>Тариф: <span id="tariffName">Обычный ПК</span> | Время: <span id="bookingTime">10:00–11:00</span> <span id="bookingHours">(1 час)</span></span><br>
+          <span class="price">Итого: <span id="bookingPrice">200</span> ₽</span>
+        </div>
+        <button type="submit" class="btn ripple-btn big-neon jelly main-book-btn">Забронировать</button>
+        <div class="booking-success" id="bookingSuccess"></div>
+      </form>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop glass center-block" id="shop">
+      <h2>Товары клуба</h2>
+      <div class="shop-list">
+        <div class="shop-item">
+          <div class="shop-img-wrap"><img src="https://pngimg.com/uploads/monster/monster_PNG24.png" alt="Monster"/></div>
+          <div class="shop-desc"><b>Monster Energy 0.5л</b><span>180 ₽</span></div>
+        </div>
+        <div class="shop-item">
+          <div class="shop-img-wrap"><img src="https://pngimg.com/uploads/sandwich/sandwich_PNG49.png" alt="Сэндвич"/></div>
+          <div class="shop-desc"><b>Сэндвич с курицей</b><span>210 ₽</span></div>
+        </div>
+        <div class="shop-item">
+          <div class="shop-img-wrap"><img src="https://static.insales-cdn.com/files/1/2493/14916437/original/lightning_cable.png" alt="Кабель"/></div>
+          <div class="shop-desc"><b>Кабель Lightning</b><span>350 ₽</span></div>
+        </div>
+        <div class="shop-item">
+          <div class="shop-img-wrap"><img src="https://pngimg.com/uploads/snickers/snickers_PNG35.png" alt="Snickers"/></div>
+          <div class="shop-desc"><b>Snickers</b><span>65 ₽</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team glass center-block" id="team">
+      <h2>Наша команда</h2>
+      <div class="team-list">
+        <div class="team-card anim-card"><img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Евгений"/><div><b>Евгений</b><br><span>Главный админ</span></div></div>
+        <div class="team-card anim-card"><img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Виктор"/><div><b>Виктор</b><br><span>Кибер-тренер</span></div></div>
+        <div class="team-card anim-card"><img src="https://randomuser.me/api/portraits/women/15.jpg" alt="Мария"/><div><b>Мария</b><br><span>SMM-менеджер</span></div></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="glass center-block">
+    <div>© 2025 PC-Game club • Сделано Даней</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

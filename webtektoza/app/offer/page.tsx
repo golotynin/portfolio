@@ -1,1 +1,0 @@
-export default function Page(){return <div className='p-8 max-w-3xl mx-auto'><h1 className='text-3xl font-serif'>Публичная оферта</h1><p className='mt-4 text-textSecondary'>Здесь разместите условия оферты.</p></div>}

@@ -1,1 +1,0 @@
-export default function Page(){return <div className='p-8 max-w-3xl mx-auto'><h1 className='text-3xl font-serif'>Политика конфиденциальности</h1><p className='mt-4 text-textSecondary'>Здесь разместите вашу политику.</p></div>}
